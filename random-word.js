@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs'
 
 let randomWords = readFileSync("./word-list.csv", "utf8")
 
-randomWords = randomWords.trim().split(",")
+randomWords = randomWords.trim().toUpperCase().split(', ').map(word => word.replace(/'/g, ''))
 
 export default class RandomWord{
 

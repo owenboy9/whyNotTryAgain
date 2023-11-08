@@ -2,6 +2,7 @@ export default class SecretWord {
 
   chars = []
 
+
   get length() {
     return this.chars.length
   }

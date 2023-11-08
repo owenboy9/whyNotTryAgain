@@ -26,3 +26,13 @@ DonateWord got inserted in both checkWin & checkLose (hope it's okay to do this 
 Random Word basically replaced Question.
 
 so now that all of the above is commited and pushed, i can start removing and adding stuff. but gently: remove and add import lines.
+
+for some reason, it keeps telling me toUpperCase() is not a function (when used to format words in the game). i have no idea how to solve it, the code used to work perfectly smoothly up until now.
+
+so i will only TRY to get rid of the '' around words in my word list, and i'm done for now.
+
+did it! piled up all sorts of operations one can do on a string. it turned out i had to be strategic about it: none of the regular ones would work if inserted after .map(word => word.replace(/'/g, ''))
+
+you live and learn.
+
+submit. goodnight.
