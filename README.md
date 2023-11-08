@@ -20,3 +20,9 @@ b. add donate a word function (not the right word, when referring to objects, ri
 but before i can do that, i need to make the whole donate a word thing work. so far, it's only a sketch.
 
 oh, and: i will probably need to fiddle more with the word list itself!
+
+okay. now i added both new DonateWord and new RandomWord into the code:
+DonateWord got inserted in both checkWin & checkLose (hope it's okay to do this new-thing twice!)
+Random Word basically replaced Question.
+
+so now that all of the above is commited and pushed, i can start removing and adding stuff. but gently: remove and add import lines.
