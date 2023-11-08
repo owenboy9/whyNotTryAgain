@@ -15,7 +15,7 @@ export default class RandomWord{
     
     let generateIndex = Math.random() * randomWords.length
     let generateWord = randomWords[Math.floor(generateIndex)]
-    return generateWord.toUpperCase()
+    return generateWord.trim().toUpperCase()
 
   }
 }
