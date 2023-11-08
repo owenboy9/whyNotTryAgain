@@ -2,7 +2,7 @@ import SecretWord from "./secret-word.js"
 import Question from "./question.js"
 import FoundWord from "./found-word.js"
 import Gallows from "./gallows.js"
-import DonateWord from "./donate-a-word.mjs"
+import DonateWord from "./donate-a-word.js"
 import RandomWord from "./random-word.js"
 
 const print = console.log
