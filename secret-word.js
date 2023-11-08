@@ -11,7 +11,6 @@ export default class SecretWord {
   }
 
   constructor(word) {
-    // process secret word into chars
     this.chars = this.processWord(word)
   }
 
