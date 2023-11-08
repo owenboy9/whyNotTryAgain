@@ -43,7 +43,7 @@ export default class Game {
       let positions = this.secretWord.getLetterPositions(letter)
       this.foundWord.applyFoundLetter(letter, positions)
       print("You found \n" + this.foundWord.asString)
-      print("good job but don\'t lower your guard. you only have " + this.gallows.stages.length + " attempts left and still " + this.lettersLeft() + " yet to go.")
+      print("good job but don\'t lower your guard. you only have " + this.gallows.stages.length + " attempts left and still " + this.lettersLeft() + " letters to go.")
       
       this.checkWin()
     } else {
