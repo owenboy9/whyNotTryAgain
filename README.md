@@ -18,3 +18,5 @@ a. rewrite the secret word part at the beginning of each round (will probably ne
 b. add donate a word function (not the right word, when referring to objects, right?) at the end of each round. shouls be much simpler than reconfiguring the secret word setup. do that first?
 
 but before i can do that, i need to make the whole donate a word thing work. so far, it's only a sketch.
+
+oh, and: i will probably need to fiddle more with the word list itself!
