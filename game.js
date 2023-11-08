@@ -25,8 +25,8 @@ export default class Game {
   
     this.gallows = new Gallows()
     
-    let question = new Question("Type the secret word, don't show your opponent: ")
-    this.secretWord = new SecretWord(question.answer)
+    let randomWord = new RandomWord()
+    this.secretWord = new SecretWord(randomWord)
     print("The secret word has " + this.secretWord.length + " letters")
     
     this.foundWord = new FoundWord(this.secretWord)
@@ -58,8 +58,10 @@ export default class Game {
   }
 
   checkWin() {
+    
     if (!this.foundWord.letters.includes('*')) {
       print("Congratulations, you barely survived this time \n" + this.foundWord.asString)
+      this.donateWord = new DonateWord()
     } else {
       this.guessWord()
     }
@@ -68,6 +70,7 @@ export default class Game {
   checkLose() {
     if (this.gallows.stages.length == 0) {
       print("Wonderful, you got to hang! \n" + "The word was " + this.secretWord.asString)
+      this.donateWord = new DonateWord()
     } else {
       this.guessWord()
     }
