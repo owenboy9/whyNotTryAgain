@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 
 
-let randomWords = readFileSync("data/word-list.csv", "utf8")
+let randomWords = readFileSync("./word-list.csv", "utf8")
 
 randomWords = randomWords.trim().split(",")
 

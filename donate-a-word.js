@@ -1,9 +1,10 @@
+import { readFileSync } from 'node:fs'
 import Module from "node:module"
 const require = Module.createRequire(import.meta.url)
 const fs = require('fs')
 const readline = require('readline')
 const prompt = require('prompt-sync')({ sigint: true })
-const randomWords = fs.readFileSync("data/word-list.csv", "utf8")
+const randomWords = readFileSync("./word-list.csv", "utf8")
 
 export default class DonateWord {
   constructor() {
